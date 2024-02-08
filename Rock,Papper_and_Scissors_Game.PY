@@ -47,11 +47,11 @@ def play_game(player_choice):
     if result is True:
         computer_score += 1
         if computer_score == 10:
-            print("You Lose!")
+            print("\n\tYou Lose!")
     elif result is False:
         player_score += 1
         if player_score == 10:
-            print("You Win!")
+            print("\n\tYou Win!")
     else:
         print(result)
     print(f"\nComputer's score: {computer_score}\t\tYour score: {player_score}")

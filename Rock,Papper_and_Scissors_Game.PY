@@ -7,7 +7,7 @@ computer_score = 0
 def gamewin(computer, player):
     if computer == player:
         return "\n\tIt is a tie."
-    elif (computer == 'r' and player == 's') or (computer == 'p' and player == 'r') or (computer == 's' and player == 'p'):
+    elif (computer == 'Rock' and player == 'Scissor') or (computer == 'Papper' and player == 'Rock') or (computer == 'Scissor' and player == 'Papper'):
         return True
     else:
         return False
@@ -22,20 +22,20 @@ def get_computer_choice():
         print("OK! The computer is choosing...")
         compturn = random.randint(1, 3)
         if compturn == 1:
-            return 'r'
+            return 'Rock'
         elif compturn == 2:
-            return 'p'
+            return 'Papper'
         elif compturn == 3:
-            return 's'
+            return 'Scissor'
 
 def click(button_number):
     player_choice = None 
     if button_number == 1:
-        player_choice = 'r'
+        player_choice = 'Rock'
     elif button_number == 2:
-        player_choice = 'p'
+        player_choice = 'Papper'
     elif button_number == 3:
-        player_choice = 's'
+        player_choice = 'Scissor'
     play_game(player_choice)
 
 def play_game(player_choice):

@@ -61,12 +61,12 @@ def play_game(player_choice):
         print(f"Score of player: {player_score}")
 
 window = Tk()
-rock = PhotoImage(file='Rock.png')
-papper = PhotoImage(file='paper.png')
-scissor = PhotoImage(file='scissor.png')
-re_sized = rock.subsample(7, 9)
-re_sized2 = papper.subsample(7, 9)
-re_sized3 = scissor.subsample(7, 9)
+rock = PhotoImage(file='./Images/Rock.png')
+papper = PhotoImage(file='./Images/paper.png')
+scissor = PhotoImage(file='./Images/scissor.png')
+re_sized = rock.subsample(5, 4)
+re_sized2 = papper.subsample(5, 4)
+re_sized3 = scissor.subsample(5, 4)
 
 button1 = Button(window, 
                  command=lambda: click(1), 

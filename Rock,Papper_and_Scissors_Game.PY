@@ -1,5 +1,6 @@
 from tkinter import *
 import random
+import time
 
 player_score = 0
 computer_score = 0
@@ -20,6 +21,7 @@ To win you have to score 10 points before the computer.
 
 def get_computer_choice():
         print("OK! The computer is choosing...")
+        time.sleep(2)
         compturn = random.randint(1, 3)
         if compturn == 1:
             return 'Rock'
@@ -79,4 +81,3 @@ button2.pack(side='left')
 button3.pack(side='left')
 
 window.mainloop()
-# Test Commit

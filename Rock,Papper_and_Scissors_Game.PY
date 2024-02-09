@@ -21,7 +21,7 @@ To win you have to score 10 points before the computer.
 
 def get_computer_choice():
         print("OK! The computer is choosing...")
-        time.sleep(2)
+        time.sleep(1)
         compturn = random.randint(1, 3)
         if compturn == 1:
             return 'Rock'
@@ -42,7 +42,6 @@ def click(button_number):
 
 def play_game(player_choice):
     global player_score, computer_score
-
     computer = get_computer_choice()
     print("YOU CHOSE: " + player_choice + " , COMPUTER CHOSE: " + computer)
     result = gamewin(computer, player_choice)
